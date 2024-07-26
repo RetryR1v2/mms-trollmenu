@@ -47,6 +47,8 @@ RegisterServerEvent('mms-trollmenu:server:SendToRagdoll',function ()
     local src = source
     local MyCharacter = VORPcore.getUser(src).getUsedCharacter
     local MyIdentifier = MyCharacter.identifier
+    local MyGroup = MyCharacter.group
+    if MyGroup == Config.AdminGroup then
     for _, player in ipairs(GetPlayers()) do
         if #GetPlayers() ~= nil then
         local Character = VORPcore.getUser(player).getUsedCharacter
@@ -56,6 +58,7 @@ RegisterServerEvent('mms-trollmenu:server:SendToRagdoll',function ()
             end
         end
     end
+end
 end)
 
 ------ Freeeze
@@ -64,6 +67,8 @@ RegisterServerEvent('mms-trollmenu:server:SendToFreeze',function ()
     local src = source
     local MyCharacter = VORPcore.getUser(src).getUsedCharacter
     local MyIdentifier = MyCharacter.identifier
+    local MyGroup = MyCharacter.group
+    if MyGroup == Config.AdminGroup then
     for _, player in ipairs(GetPlayers()) do
         if #GetPlayers() ~= nil then
         local Character = VORPcore.getUser(player).getUsedCharacter
@@ -73,6 +78,7 @@ RegisterServerEvent('mms-trollmenu:server:SendToFreeze',function ()
             end
         end
     end
+end
 end)
 
 ------ AllToMe
@@ -81,6 +87,8 @@ RegisterServerEvent('mms-trollmenu:server:SendToMe',function (MyCoords)
     local src = source
     local MyCharacter = VORPcore.getUser(src).getUsedCharacter
     local MyIdentifier = MyCharacter.identifier
+    local MyGroup = MyCharacter.group
+    if MyGroup == Config.AdminGroup then
     for _, player in ipairs(GetPlayers()) do
         if #GetPlayers() ~= nil then
         local Character = VORPcore.getUser(player).getUsedCharacter
@@ -90,6 +98,7 @@ RegisterServerEvent('mms-trollmenu:server:SendToMe',function (MyCoords)
             end
         end
     end
+end
 end)
 
 ------ AllToVoid
@@ -98,6 +107,8 @@ RegisterServerEvent('mms-trollmenu:server:SendToVoid',function ()
     local src = source
     local MyCharacter = VORPcore.getUser(src).getUsedCharacter
     local MyIdentifier = MyCharacter.identifier
+    local MyGroup = MyCharacter.group
+    if MyGroup == Config.AdminGroup then
     for _, player in ipairs(GetPlayers()) do
         if #GetPlayers() ~= nil then
         local Character = VORPcore.getUser(player).getUsedCharacter
@@ -107,6 +118,7 @@ RegisterServerEvent('mms-trollmenu:server:SendToVoid',function ()
             end
         end
     end
+end
 end)
 
 ------ Kill All
@@ -115,6 +127,8 @@ RegisterServerEvent('mms-trollmenu:server:KillAll',function ()
     local src = source
     local MyCharacter = VORPcore.getUser(src).getUsedCharacter
     local MyIdentifier = MyCharacter.identifier
+    local MyGroup = MyCharacter.group
+    if MyGroup == Config.AdminGroup then
     for _, player in ipairs(GetPlayers()) do
         if #GetPlayers() ~= nil then
         local Character = VORPcore.getUser(player).getUsedCharacter
@@ -124,6 +138,7 @@ RegisterServerEvent('mms-trollmenu:server:KillAll',function ()
             end
         end
     end
+end
 end)
 
 ------ Revive All
@@ -132,6 +147,8 @@ RegisterServerEvent('mms-trollmenu:server:ReviveAll',function ()
     local src = source
     local MyCharacter = VORPcore.getUser(src).getUsedCharacter
     local MyIdentifier = MyCharacter.identifier
+    local MyGroup = MyCharacter.group
+    if MyGroup == Config.AdminGroup then
     for _, player in ipairs(GetPlayers()) do
         if #GetPlayers() ~= nil then
         local Character = VORPcore.getUser(player).getUsedCharacter
@@ -141,6 +158,7 @@ RegisterServerEvent('mms-trollmenu:server:ReviveAll',function ()
             end
         end
     end
+end
 end)
 
 ------ Invisible All
@@ -149,6 +167,8 @@ RegisterServerEvent('mms-trollmenu:server:SetInvisible',function ()
     local src = source
     local MyCharacter = VORPcore.getUser(src).getUsedCharacter
     local MyIdentifier = MyCharacter.identifier
+    local MyGroup = MyCharacter.group
+    if MyGroup == Config.AdminGroup then
     for _, player in ipairs(GetPlayers()) do
         if #GetPlayers() ~= nil then
         local Character = VORPcore.getUser(player).getUsedCharacter
@@ -158,6 +178,7 @@ RegisterServerEvent('mms-trollmenu:server:SetInvisible',function ()
             end
         end
     end
+end
 end)
 
 ------ LightningStrikePlayer All
@@ -166,6 +187,8 @@ RegisterServerEvent('mms-trollmenu:server:LightningStrike',function ()
     local src = source
     local MyCharacter = VORPcore.getUser(src).getUsedCharacter
     local MyIdentifier = MyCharacter.identifier
+    local MyGroup = MyCharacter.group
+    if MyGroup == Config.AdminGroup then
     for _, player in ipairs(GetPlayers()) do
         if #GetPlayers() ~= nil then
         local Character = VORPcore.getUser(player).getUsedCharacter
@@ -175,6 +198,7 @@ RegisterServerEvent('mms-trollmenu:server:LightningStrike',function ()
             end
         end
     end
+end
 end)
 
 ------ Transform Into Animal
@@ -183,6 +207,8 @@ RegisterServerEvent('mms-trollmenu:server:TransformAll',function ()
     local src = source
     local MyCharacter = VORPcore.getUser(src).getUsedCharacter
     local MyIdentifier = MyCharacter.identifier
+    local MyGroup = MyCharacter.group
+    if MyGroup == Config.AdminGroup then
     for _, player in ipairs(GetPlayers()) do
         if #GetPlayers() ~= nil then
         local Character = VORPcore.getUser(player).getUsedCharacter
@@ -192,6 +218,7 @@ RegisterServerEvent('mms-trollmenu:server:TransformAll',function ()
             end
         end
     end
+end
 end)
 
 ------ Reload Character
@@ -200,6 +227,8 @@ RegisterServerEvent('mms-trollmenu:server:ReloadAll',function ()
     local src = source
     local MyCharacter = VORPcore.getUser(src).getUsedCharacter
     local MyIdentifier = MyCharacter.identifier
+    local MyGroup = MyCharacter.group
+    if MyGroup == Config.AdminGroup then
     for _, player in ipairs(GetPlayers()) do
         if #GetPlayers() ~= nil then
         local Character = VORPcore.getUser(player).getUsedCharacter
@@ -209,6 +238,7 @@ RegisterServerEvent('mms-trollmenu:server:ReloadAll',function ()
             end
         end
     end
+end
 end)
 
 ------ DrunkenAll
@@ -217,6 +247,8 @@ RegisterServerEvent('mms-trollmenu:server:DrunkenAll',function ()
     local src = source
     local MyCharacter = VORPcore.getUser(src).getUsedCharacter
     local MyIdentifier = MyCharacter.identifier
+    local MyGroup = MyCharacter.group
+    if MyGroup == Config.AdminGroup then
     for _, player in ipairs(GetPlayers()) do
         if #GetPlayers() ~= nil then
         local Character = VORPcore.getUser(player).getUsedCharacter
@@ -226,6 +258,7 @@ RegisterServerEvent('mms-trollmenu:server:DrunkenAll',function ()
             end
         end
     end
+end
 end)
 
 ------ OnFireAll
@@ -234,6 +267,8 @@ RegisterServerEvent('mms-trollmenu:server:OnFireAll',function ()
     local src = source
     local MyCharacter = VORPcore.getUser(src).getUsedCharacter
     local MyIdentifier = MyCharacter.identifier
+    local MyGroup = MyCharacter.group
+    if MyGroup == Config.AdminGroup then
     for _, player in ipairs(GetPlayers()) do
         if #GetPlayers() ~= nil then
         local Character = VORPcore.getUser(player).getUsedCharacter
@@ -243,6 +278,7 @@ RegisterServerEvent('mms-trollmenu:server:OnFireAll',function ()
             end
         end
     end
+end
 end)
 
 ------ InHeavenAll
@@ -251,6 +287,8 @@ RegisterServerEvent('mms-trollmenu:server:InHeavenAll',function ()
     local src = source
     local MyCharacter = VORPcore.getUser(src).getUsedCharacter
     local MyIdentifier = MyCharacter.identifier
+    local MyGroup = MyCharacter.group
+    if MyGroup == Config.AdminGroup then
     for _, player in ipairs(GetPlayers()) do
         if #GetPlayers() ~= nil then
         local Character = VORPcore.getUser(player).getUsedCharacter
@@ -260,6 +298,7 @@ RegisterServerEvent('mms-trollmenu:server:InHeavenAll',function ()
             end
         end
     end
+end
 end)
 
 ------ HandcuffAll
@@ -268,6 +307,8 @@ RegisterServerEvent('mms-trollmenu:server:HandcuffAll',function ()
     local src = source
     local MyCharacter = VORPcore.getUser(src).getUsedCharacter
     local MyIdentifier = MyCharacter.identifier
+    local MyGroup = MyCharacter.group
+    if MyGroup == Config.AdminGroup then
     for _, player in ipairs(GetPlayers()) do
         if #GetPlayers() ~= nil then
         local Character = VORPcore.getUser(player).getUsedCharacter
@@ -277,6 +318,7 @@ RegisterServerEvent('mms-trollmenu:server:HandcuffAll',function ()
             end
         end
     end
+end
 end)
 
 ------ MakeBigAll
@@ -285,6 +327,8 @@ RegisterServerEvent('mms-trollmenu:server:MakeBigAll',function ()
     local src = source
     local MyCharacter = VORPcore.getUser(src).getUsedCharacter
     local MyIdentifier = MyCharacter.identifier
+    local MyGroup = MyCharacter.group
+    if MyGroup == Config.AdminGroup then
     for _, player in ipairs(GetPlayers()) do
         if #GetPlayers() ~= nil then
         local Character = VORPcore.getUser(player).getUsedCharacter
@@ -294,6 +338,7 @@ RegisterServerEvent('mms-trollmenu:server:MakeBigAll',function ()
             end
         end
     end
+end
 end)
 
 ------ MakeSmallAll
@@ -302,6 +347,8 @@ RegisterServerEvent('mms-trollmenu:server:MakeSmallAll',function ()
     local src = source
     local MyCharacter = VORPcore.getUser(src).getUsedCharacter
     local MyIdentifier = MyCharacter.identifier
+    local MyGroup = MyCharacter.group
+    if MyGroup == Config.AdminGroup then
     for _, player in ipairs(GetPlayers()) do
         if #GetPlayers() ~= nil then
         local Character = VORPcore.getUser(player).getUsedCharacter
@@ -311,6 +358,7 @@ RegisterServerEvent('mms-trollmenu:server:MakeSmallAll',function ()
             end
         end
     end
+end
 end)
 
 --------------------------------------------------------------------------------------------------
